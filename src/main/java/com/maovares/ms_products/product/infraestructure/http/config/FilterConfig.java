@@ -9,7 +9,7 @@ import com.maovares.ms_products.product.infraestructure.http.filter.ClientCertVa
 @Configuration
 public class FilterConfig {
 
-    // @Bean
+    @Bean
     public FilterRegistrationBean<ClientCertValidationFilter> clientCertValidationFilter() {
         FilterRegistrationBean<ClientCertValidationFilter> registrationBean = new FilterRegistrationBean<>();
         registrationBean.setFilter(new ClientCertValidationFilter());
